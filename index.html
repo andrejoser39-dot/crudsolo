@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas - CRUD Vanilla JS</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 500px; margin: 40px auto; padding: 20px; }
+        form { display: flex; gap: 10px; margin-bottom: 20px; }
+        input { flex: 1; padding: 8px; }
+        button { padding: 8px 12px; cursor: pointer; }
+        ul { list-style: none; padding: 0; }
+        li { display: flex; justify-content: space-between; align-items: center; padding: 10px; border-bottom: 1px solid #eee; }
+        .actions { display: flex; gap: 5px; }
+    </style>
+</head>
+<body>
+
+    <h2>Mis Tareas (CRUD)</h2>
+    
+    <form id="task-form">
+        <input type="text" id="task-input" placeholder="Escribe una nueva tarea..." required>
+        <button type="submit">Guardar</button>
+    </form>
+
+    <ul id="task-list"></ul>
+
+    <script src="app.js"></script>
+</body>
+</html>
